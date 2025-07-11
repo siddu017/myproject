@@ -12,9 +12,18 @@ public class ProductEntity {
     private Long productId;
     private String productCategory;
     private String productName;
-    private double productPrice;
+    private Double productPrice;
     private String productDescription;
     private String productImageUrl;
+    private Double prooductRating;
+
+    public Double getProoductRating() {
+        return prooductRating;
+    }
+
+    public void setProoductRating(Double prooductRating) {
+        this.prooductRating = prooductRating;
+    }
 
     public Long getProductId() {
         return productId;
@@ -40,11 +49,11 @@ public class ProductEntity {
         this.productName = productName;
     }
 
-    public double getProductPrice() {
+    public Double getProductPrice() {
         return productPrice;
     }
 
-    public void setProductPrice(double productPrice) {
+    public void setProductPrice(Double productPrice) {
         this.productPrice = productPrice;
     }
 
