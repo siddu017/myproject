@@ -1,14 +1,6 @@
-package SiDev.spring_ecomm.entity.productentity;
+package SiDev.spring_ecomm.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-
-@Entity
-public class ProductEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class ProductDTO {
     private Long productId;
     private String productCategory;
     private String productName;
@@ -16,14 +8,6 @@ public class ProductEntity {
     private String productDescription;
     private String productImageUrl;
     private Double productRating;
-
-    public Double getProductRating() {
-        return productRating;
-    }
-
-    public void setProductRating(Double productRating) {
-        this.productRating = productRating;
-    }
 
     public Long getProductId() {
         return productId;
@@ -72,4 +56,13 @@ public class ProductEntity {
     public void setProductImageUrl(String productImageUrl) {
         this.productImageUrl = productImageUrl;
     }
+
+    public Double getProductRating() {
+        return productRating;
+    }
+
+    public void setProductRating(Double productRating) {
+        this.productRating = productRating;
+    }
+
 }
